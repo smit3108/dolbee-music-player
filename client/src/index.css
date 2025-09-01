@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.submit-button {
+    width: 30%;
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.1s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+/* styles.css */
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.playing {
+  /* Add custom styles for the "playing" state here */
+  /* For example, you can add a rotating animation */
+  animation: rotateAnimation 2s linear infinite;
+  border: 3px solid red; /* Add any other styles you want */
+}
+
+.not-playing {
+  /* Add custom styles for the "not-playing" state here */
+  /* For example, you can remove the rotating animation */
+  animation: none;
+  border: 3px solid green; /* Add any other styles you want */
+}
